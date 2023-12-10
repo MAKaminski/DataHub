@@ -1,0 +1,17 @@
+.activitySection {
+    /* Add your styles here */
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .activityHeader {
+    /* Add your styles here */
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .activityCounter {
+    /* Add your styles here */
+    font-size: 16px;
+  }

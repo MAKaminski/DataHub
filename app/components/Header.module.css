@@ -1,0 +1,28 @@
+@keyframes gradient-scroll {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem; /* Tailwind's p-10 is equivalent to 2.5rem */
+  transition: 0.75s; /* 0.5 second transition effect to slide in the sidebar */
+  font-size: 1.5rem; /* Tailwind's text-2xl is equivalent to 1.5rem */
+  background: linear-gradient(to right, #FF6EC7, #00ffff); /* Tailwind's from-gray-800 to-black */
+  color:black;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}  
+
+.header a:hover {
+  color: #f1f1f1; /* Change the color on hover */
+  text-decoration: none; /* Remove underline on hover */
+  border-radius: 0.25rem;
+  color: rgba(0, 255, 255, 0.5); /* neon blue text with reduced intensity */
+  text-shadow: 0 0 2.5px rgba(0, 255, 255, 0.5), 0 0 5px rgba(0, 255, 255, 0.5), 0 0 7.5px rgba(0, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.5); /* neon glow with reduced intensity */
+  transition: 0.75s; /* 0.5 second transition effect to slide in the sidebar */
+  }

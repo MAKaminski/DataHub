@@ -1,0 +1,48 @@
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 10%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 10; /* Stay at the top */
+  left: 10;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.75s; /* 0.5 second transition effect to slide in the sidebar */
+  font-size: 1.5rem; /* Tailwind's text-2xl is equivalent to 1.5rem */
+  background: linear-gradient(to right, #2d3748, #000000); /* Tailwind's from-gray-800 to-black */
+  color: #FF6EC7; /* Tailwind's text-neon-pink */   
+}
+
+.sidenav.minimized {
+  transition: 0.75s; /* 0.5 second transition effect to slide in the sidebar */
+  width: 5%;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1; /* Change the color on hover */
+  text-decoration: none; /* Remove underline on hover */
+  border-radius: 0.25rem;
+  color: #00ffff; /* neon blue text */
+  text-shadow: 0 0 2.5px #00ffff, 0 0 5px #00ffff, 0 0 7.5px #00ffff, 0 0 10px #00ffff; /* neon glow */
+  transition: 0.75s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  transition: 0.75s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+a:hover .icon {
+  color: #f1f1f1; /* Change the color on hover */
+  text-decoration: none; /* Remove underline on hover */
+  color: #00ffff; /* neon blue text */
+  text-shadow: 0 0 2.5px #00ffff, 0 0 5px #00ffff, 0 0 7.5px #00ffff, 0 0 10px #00ffff; /* neon glow */
+  transition: 0.75s; /* 0.5 second transition effect to slide in the sidebar */
+}
